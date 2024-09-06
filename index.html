@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet"  href="style.css">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet"  href="style.css"/>
 </head>
 <body>
-    <h1>Planets</h1>
+        <p id="index">Index: 0</p>
+        <button id="previous" onclick="changeIndex(-1)">Previous</button>
+        <button id="next" onclick="changeIndex(1)">Next</button>
+    <div id ="planetsDisplay">
     <h2 id = "pname"></h2>
-    <p id="index">Index: 0</p>
-        <button onclick="previousPlanet()">Previous</button>
-        <button onclick="nextPlanet()">Next</button>
-    <p id="pinout"></p>
-    <div id = "dot">  
+    <p id = "inner"></p>
+    <div id = "visual"></div>
     </div>
     <script src="script.js"></script>
 </body>
